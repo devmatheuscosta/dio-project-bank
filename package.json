@@ -1,0 +1,21 @@
+{
+	"name": "015-api-rest-database",
+	"version": "1.0.0",
+	"main": "index.js",
+	"scripts": {
+		"dist": "tsup src",
+		"start:dev": "tsx --env-file=.env src/app.ts",
+		"start:watch": "tsx watch --env-file=.env  src/app.ts",
+		"start:dist": "npm run dist && node dist/src/index.js"
+	},
+	"keywords": [],
+	"author": "Matheus Costa",
+	"license": "ISC",
+	"description": "",
+	"devDependencies": {
+		"@types/node": "^22.5.2",
+		"tsup": "^8.2.4",
+		"tsx": "^4.19.0",
+		"typescript": "^5.5.4"
+	}
+}
